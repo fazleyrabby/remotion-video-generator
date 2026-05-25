@@ -196,7 +196,7 @@ const SceneComponent: React.FC<{
                 fontSize: "72px",
                 color: highlightColor,
                 fontWeight: 700,
-                fontFamily: "system-ui, -apple-system, sans-serif",
+                fontFamily: "'Hind Siliguri', system-ui, -apple-system, sans-serif",
                 textShadow: "0 10px 30px rgba(0,0,0,0.8)",
                 transform: `scale(${scale})`,
                 opacity,
@@ -220,7 +220,7 @@ const SceneComponent: React.FC<{
       return (
         <h2 key={i} style={{ 
           fontSize: "64px", marginBottom: "30px", color: highlightColor,
-          lineHeight: 1.4, fontWeight: 600, fontFamily: "system-ui, -apple-system, sans-serif",
+          lineHeight: 1.4, fontWeight: 600, fontFamily: "'Hind Siliguri', system-ui, -apple-system, sans-serif",
           textShadow: "0 10px 30px rgba(0,0,0,0.8)",
           transform: `translateY(${translateY}px)`, opacity,
           textAlign: characterMascot !== "none" ? "left" : "center"
@@ -233,6 +233,9 @@ const SceneComponent: React.FC<{
 
   return (
     <AbsoluteFill>
+      <style>{`
+        @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&display=swap');
+      `}</style>
       <DynamicBackground emphasis={scene.emphasis} styleMode={backgroundStyle} />
       <Audio src={staticFile(scene.audioFile)} />
       <AbsoluteFill style={{ 
