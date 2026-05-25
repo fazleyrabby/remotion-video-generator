@@ -2,6 +2,7 @@ import { AbsoluteFill, Audio, Sequence, interpolate, useCurrentFrame, staticFile
 import { z } from "zod";
 import { pulseVideoSchema, sceneSchema } from "./Root";
 import React from "react";
+import { useAudioData, visualizeAudio } from "@remotion/media-utils";
 
 type SceneProps = z.infer<typeof sceneSchema>;
 
@@ -86,6 +87,20 @@ const SceneComponent: React.FC<{
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
+  const audioSrc = staticFile(scene.audioFile);
+  const audioData = useAudioData(audioSrc);
+
+  let volume = 0;
+  if (audioData) {
+    const frequencies = visualizeAudio({
+      audioData,
+      frame,
+      fps,
+      numberOfSamples: 16,
+    });
+    volume = frequencies.reduce((a, b) => a + b, 0) / frequencies.length;
+  }
+
   let highlightColor = "#ffffff";
   if (scene.emphasis.includes("tense") || scene.emphasis.includes("impact")) highlightColor = "#ff7b72";
   else if (scene.emphasis.includes("release")) highlightColor = "#79c0ff";
@@ -101,21 +116,17 @@ const SceneComponent: React.FC<{
   const renderMascot = () => {
     if (characterMascot === "none") return null;
 
-    // Decide the pose based on scene emphasis, but also change/randomize it periodically within the scene
-    const poseInterval = 75; // change pose every 75 frames (~2.5s)
-    const segmentIndex = Math.floor(frame / poseInterval);
-    const frameInSegment = frame % poseInterval;
-
+    // Decide the pose based on scene emphasis, keeping it constant throughout the scene
     let suffix = "neutral";
     if (scene.emphasis.includes("tense") || scene.emphasis.includes("impact")) {
-      const poses = ["intense", "neutral", "intense", "thinking"];
-      suffix = poses[(index + segmentIndex) % poses.length];
+      suffix = "intense";
     } else if (scene.emphasis.includes("curiosity") || scene.emphasis.includes("insight") || scene.emphasis.includes("reflective")) {
-      const poses = ["thinking", "neutral", "thinking", "intense"];
-      suffix = poses[(index + segmentIndex) % poses.length];
+      suffix = "thinking";
     } else {
-      const poses = ["neutral", "thinking", "neutral", "intense"];
-      suffix = poses[(index + segmentIndex) % poses.length];
+      // For neutral scenes, pick a randomized pose seeded by the scene text & index to avoid predictable cycles
+      const poses = ["neutral", "thinking", "intense"];
+      const seed = index + (scene.text || "").length;
+      suffix = poses[seed % poses.length];
     }
 
     let imgSrc = "";
@@ -142,13 +153,9 @@ const SceneComponent: React.FC<{
     const floatY = Math.sin(frame / 12) * 12;
     const swayRotate = Math.sin(frame / 20) * 1.5; 
 
-    // Quick squash/stretch jump pop when the pose switches inside the scene
-    const poseTransition = spring({
-      fps,
-      frame: frameInSegment,
-      config: { damping: 12, stiffness: 180 }
-    });
-    const poseScale = interpolate(poseTransition, [0, 1], [0.92, 1.0]);
+    const glowScale = 1 + volume * 0.4;
+    const glowOpacity = 0.25 + volume * 0.65;
+    const glowIntensity = 50 + volume * 70;
 
     return (
       <div style={{
@@ -156,11 +163,24 @@ const SceneComponent: React.FC<{
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        transform: `translateX(${translateX}px) translateY(${floatY}px) scaleX(${scaleX}) scaleY(${scaleY}) scale(${breatheScale * poseScale}) rotate(${swayRotate}deg)`,
+        position: "relative",
+        transform: `translateX(${translateX}px) translateY(${floatY}px) scaleX(${scaleX}) scaleY(${scaleY}) scale(${breatheScale}) rotate(${swayRotate}deg)`,
         transformOrigin: "bottom center",
         opacity,
         zIndex: 10,
       }}>
+        <div style={{
+          position: "absolute",
+          width: "320px",
+          height: "320px",
+          borderRadius: "50%",
+          background: `radial-gradient(circle, ${highlightColor} 0%, transparent 70%)`,
+          filter: `blur(${glowIntensity}px)`,
+          transform: `scale(${glowScale})`,
+          opacity: glowOpacity,
+          zIndex: -1,
+          pointerEvents: "none",
+        }} />
         <img 
           src={imgSrc} 
           style={{

@@ -114,7 +114,7 @@
     }
   ],
   "textRevealStyle": "word",
-  "backgroundStyle": "tech-grid",
+  "backgroundStyle": "solid-minimal",
   "backgroundAudio": "office",
   "characterMascot": "developer",
   "customCharacterUrl": ""
