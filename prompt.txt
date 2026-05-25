@@ -1,0 +1,124 @@
+TITLE: The Ground Beneath Software Engineering Is Moving
+
+[Scene 1 — Opening]
+
+Software engineering is changing faster than many people can emotionally process.
+
+Not just technically.
+
+Economically. Psychologically. Professionally.
+
+--------------------------------------------------
+
+[Scene 2 — Compression]
+
+The industry once allowed room for slow growth.
+
+Mistakes.
+Mentorship.
+Gradual improvement.
+
+But now, everything feels compressed.
+
+Faster delivery.
+Faster learning.
+Faster adaptation.
+
+And many developers are quietly asking:
+
+“How do you grow naturally in an environment that expects acceleration everywhere?”
+
+--------------------------------------------------
+
+[Scene 3 — Economic Fear]
+
+The deepest fear is not really about AI itself.
+
+It’s about becoming economically replaceable.
+
+Developers worry that:
+years of effort may lose value,
+entry-level opportunities may shrink,
+and AI-assisted seniors may replace multiple juniors.
+
+Productivity is increasing.
+
+But insecurity is increasing too.
+
+--------------------------------------------------
+
+[Scene 4 — The Missing Ladder]
+
+Historically, junior engineers learned through repetition.
+
+Small fixes.
+Gradual exposure.
+Time.
+
+But AI increasingly absorbs those beginner-level tasks.
+
+Which creates an uncomfortable question:
+
+“How do people become experienced engineers if the learning ladder disappears?”
+
+The industry still doesn’t fully know.
+
+--------------------------------------------------
+
+[Scene 5 — Fundamentals]
+
+People often say:
+
+“Just learn fundamentals.”
+
+And fundamentals still matter.
+
+But now learners are questioning something deeper:
+
+“Is long-term investment itself still rational?”
+
+--------------------------------------------------
+
+[Scene 6 — Constant Acceleration]
+
+Every day brings:
+new models,
+new tools,
+new benchmarks,
+new predictions.
+
+Human psychology was never designed for this level of nonstop technological acceleration.
+
+Eventually, it starts feeling like human effort itself is depreciating in real time.
+
+--------------------------------------------------
+
+[Scene 7 — Closing]
+
+But complete paralysis is dangerous too.
+
+Because while tools change rapidly,
+some abilities remain less fragile:
+
+understanding systems,
+debugging complexity,
+adapting continuously,
+communicating clearly,
+learning deeply.
+
+Maybe this is simply a transitional era.
+
+Not fully stable.
+Not fully understood.
+
+But honest uncertainty may be healthier than pretending everything is either perfectly fine…
+
+or completely doomed.
+
+--------------------------------------------------
+
+[Final Frame]
+
+“The ground beneath software engineering is moving.”
+
+— And everyone is trying to find stable footing.

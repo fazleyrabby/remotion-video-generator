@@ -1,0 +1,41 @@
+{
+  "scenes": [
+    {
+      "voice": "Software engineering is changing faster than many people can emotionally process. Not just technically. Economically. Psychologically. Professionally.",
+      "text": "Engineering is accelerating faster than you can process it.",
+      "duration": 60,
+      "visual": "Dark, moody slow-motion drone shot of a sprawling, futuristic cityscape at twilight. The lights are blurring slightly, suggesting speed and overwhelming motion. The color palette is cool blues and greys, creating a sense of cold, overwhelming velocity.",
+      "emphasis": "Overwhelming, fast-paced, slightly unsettling.",
+      "audioFile": "scene_0.mp3"
+    },
+    {
+      "voice": "The industry once allowed room for slow growth. Mistakes. Mentorship. Gradual improvement. But now, everything feels compressed. Faster delivery. Faster learning. Faster adaptation.",
+      "text": "Slow growth is dead. Mistakes are obsolete. Speed is the new currency.",
+      "duration": 60,
+      "visual": "Split screen. Left side: slow, warm, golden hour footage of hands writing code on paper, coffee steaming. Right side: fast, cold, high-contrast footage of servers flashing, scrolling lines of code, and hands typing furiously. The transition between the two is jarring, emphasizing the loss of the 'slow' side.",
+      "emphasis": "Contrast, loss, displacement.",
+      "audioFile": "scene_1.mp3"
+    },
+    {
+      "voice": "And many developers are quietly asking: 'How do you grow naturally in an environment that expects acceleration everywhere?'",
+      "text": "How do you grow naturally when the world demands you run faster?",
+      "duration": 60,
+      "visual": "A single, isolated developer sitting at a desk in a dimly lit room. The room is filled with soft, natural light, but the developer looks tired and contemplative. The camera slowly pushes in, focusing on their face, capturing the weight of the question. The background is slightly out of focus, drawing attention to the human element.",
+      "emphasis": "Introspective, vulnerable, human.",
+      "audioFile": "scene_2.mp3"
+    },
+    {
+      "voice": "The deepest fear is not really about AI itself. It's about becoming economically replaceable. Productivity is increasing. But insecurity is increasing too.",
+      "text": "The real fear isn't the AI. It's replacement. Productivity up. Insecurity up.",
+      "duration": 60,
+      "visual": "A stark, minimalist white background. Text appears slowly, line by line, with each line settling before the next appears. The text is bold and black, creating a high-contrast, serious tone. The camera slowly zooms out, revealing an empty, sterile office space, symbolizing the lack of human presence and the overwhelming nature of the new reality.",
+      "emphasis": "Serious, unsettling, existential.",
+      "audioFile": "scene_3.mp3"
+    }
+  ],
+  "textRevealStyle": "word",
+  "backgroundStyle": "solid-minimal",
+  "backgroundAudio": "office",
+  "characterMascot": "developer",
+  "customCharacterUrl": ""
+}
