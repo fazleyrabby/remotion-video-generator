@@ -1,40 +1,120 @@
 {
   "scenes": [
     {
-      "voice": "Software engineering is changing faster than many people can emotionally process. Not just technically. Economically. Psychologically. Professionally.",
-      "text": "Engineering is accelerating faster than you can process it.",
+      "voice": "AI systems are beginning to evolve beyond simple chat interfaces and language generation.",
+      "text": "Beyond the Chatbot.\nA new layer emerges.\nMulti-Agent Orchestration.",
       "duration": 60,
-      "visual": "Dark, moody slow-motion drone shot of a sprawling, futuristic cityscape at twilight. The lights are blurring slightly, suggesting speed and overwhelming motion. The color palette is cool blues and greys, creating a sense of cold, overwhelming velocity.",
-      "emphasis": "Overwhelming, fast-paced, slightly unsettling.",
+      "visual": "Dark, sleek digital void. A single, glowing node pulses. Suddenly, it fractures and splits into three distinct, interconnected nodes, linking with soft, geometric lines.",
+      "emphasis": "Anticipation, Expansion",
       "audioFile": "scene_0.mp3"
     },
     {
-      "voice": "The industry once allowed room for slow growth. Mistakes. Mentorship. Gradual improvement. But now, everything feels compressed. Faster delivery. Faster learning. Faster adaptation.",
-      "text": "Slow growth is dead. Mistakes are obsolete. Speed is the new currency.",
+      "voice": "Instead of relying on a single model, these systems allow multiple AI agents to collaborate together toward a shared goal.",
+      "text": "One Model.\nMany Minds.\nA Coordinated System.",
       "duration": 60,
-      "visual": "Split screen. Left side: slow, warm, golden hour footage of hands writing code on paper, coffee steaming. Right side: fast, cold, high-contrast footage of servers flashing, scrolling lines of code, and hands typing furiously. The transition between the two is jarring, emphasizing the loss of the 'slow' side.",
-      "emphasis": "Contrast, loss, displacement.",
+      "visual": "Split screen. Left: A generic, static chat bubble. Right: A complex, living network of nodes exchanging data, forming a cohesive, pulsating structure.",
+      "emphasis": "Contrast, Unity",
       "audioFile": "scene_1.mp3"
     },
     {
-      "voice": "And many developers are quietly asking: 'How do you grow naturally in an environment that expects acceleration everywhere?'",
-      "text": "How do you grow naturally when the world demands you run faster?",
+      "voice": "Different agents can specialize in planning, execution, reasoning, monitoring, and tool usage simultaneously.",
+      "text": "Plan.\nExecute.\nReason.\nMonitor.\nAct.",
       "duration": 60,
-      "visual": "A single, isolated developer sitting at a desk in a dimly lit room. The room is filled with soft, natural light, but the developer looks tired and contemplative. The camera slowly pushes in, focusing on their face, capturing the weight of the question. The background is slightly out of focus, drawing attention to the human element.",
-      "emphasis": "Introspective, vulnerable, human.",
+      "visual": "Rapid, rhythmic cuts. Each word flashes on screen as a different color-coded geometric shape (Sphere, Cube, Hexagon, Hexagon, Hexagon) rotates and locks into place, forming a 3D structure.",
+      "emphasis": "Rhythm, Precision",
       "audioFile": "scene_2.mp3"
     },
     {
-      "voice": "The deepest fear is not really about AI itself. It's about becoming economically replaceable. Productivity is increasing. But insecurity is increasing too.",
-      "text": "The real fear isn't the AI. It's replacement. Productivity up. Insecurity up.",
+      "voice": "Projects like OpenClaw are demonstrating how distributed AI architectures may handle increasingly complex workflows.",
+      "text": "OpenClaw.\nDistributed Intelligence.\nHandling Complexity.",
       "duration": 60,
-      "visual": "A stark, minimalist white background. Text appears slowly, line by line, with each line settling before the next appears. The text is bold and black, creating a high-contrast, serious tone. The camera slowly zooms out, revealing an empty, sterile office space, symbolizing the lack of human presence and the overwhelming nature of the new reality.",
-      "emphasis": "Serious, unsettling, existential.",
+      "visual": "A wireframe globe spins. Inside, intricate, glowing threads weave through the globe, connecting disparate points, visualizing a complex, invisible web of operations.",
+      "emphasis": "Scale, Architecture",
       "audioFile": "scene_3.mp3"
+    },
+    {
+      "voice": "OpenClaw uses a distributed architecture that allows AI agents to share resources, coordinate tasks, and operate together across systems.",
+      "text": "Share Resources.\nCoordinate Tasks.\nOperate Together.",
+      "duration": 60,
+      "visual": "Close-up of nodes. Energy flows between them like electricity, visualizing resource sharing. The nodes sync their rotation, showing perfect coordination.",
+      "emphasis": "Flow, Connection",
+      "audioFile": "scene_4.mp3"
+    },
+    {
+      "voice": "This moves AI beyond simple natural language processing into real operational task orchestration.",
+      "text": "Beyond Words.\nInto Action.\nOperational Orchestration.",
+      "duration": 60,
+      "visual": "Text dissolves into particles. Particles form a robotic hand reaching out, picking up an abstract object, and placing it into a slot, symbolizing action.",
+      "emphasis": "Shift, Power",
+      "audioFile": "scene_5.mp3"
+    },
+    {
+      "voice": "Instead of merely generating responses, multi-agent systems may increasingly perform complex multi-step actions autonomously.",
+      "text": "Not Just Words.\nBut Work.\nAutonomous Action.",
+      "duration": 60,
+      "visual": "A complex, multi-layered puzzle. The pieces are assembling themselves, clicking into place with a soft 'click' sound effect, representing autonomous problem solving.",
+      "emphasis": "Capability, Autonomy",
+      "audioFile": "scene_6.mp3"
+    },
+    {
+      "voice": "Industries like drug development, logistics, automation, and scientific research could be heavily transformed by this technology.",
+      "text": "Drug Dev.\nLogistics.\nAutomation.\nResearch.\nA New Era.",
+      "duration": 60,
+      "visual": "A montage of abstract representations: DNA strands twisting, supply chain nodes lighting up, gears turning, and beakers bubbling, all overlaid with the network nodes connecting them.",
+      "emphasis": "Scope, Impact",
+      "audioFile": "scene_7.mp3"
+    },
+    {
+      "voice": "Organizations may eventually use coordinated AI systems to accelerate workflows that previously required large human teams.",
+      "text": "Accelerate Workflows.\nReduce Overhead.\nScale Without Limits.",
+      "duration": 60,
+      "visual": "A slow-motion shot of a massive, chaotic crowd of people dissolving into smooth, fluid lines, which then transform into the sleek, efficient network nodes.",
+      "emphasis": "Efficiency, Transformation",
+      "audioFile": "scene_8.mp3"
+    },
+    {
+      "voice": "As these systems grow more capable, engineering complexity, monitoring, reliability, and safety concerns also increase significantly.",
+      "text": "Capability Grows.\nComplexity Rises.\nSafety First.",
+      "duration": 60,
+      "visual": "The network nodes start to vibrate and glow brighter, becoming overwhelming. Red warning lines appear, and the structure looks fragile, emphasizing the new risks.",
+      "emphasis": "Warning, Tension",
+      "audioFile": "scene_9.mp3"
+    },
+    {
+      "voice": "Developers may increasingly shift from building isolated applications toward orchestrating intelligent distributed systems.",
+      "text": "Isolated Apps.\n→\nOrchestrated Systems.",
+      "duration": 60,
+      "visual": "A single, isolated island of servers. A wave hits it, and it erodes, leaving behind a vast, interconnected landscape of servers and nodes.",
+      "emphasis": "Shift, Evolution",
+      "audioFile": "scene_10.mp3"
+    },
+    {
+      "voice": "The emergence of multi-agent orchestration may become another major shift in how software systems are designed and operated.",
+      "text": "The Stack is Changing.\nA New Paradigm.\nReshaping Software.",
+      "duration": 60,
+      "visual": "A stack of books or layers. The top layer shatters and reforms into a new, more complex, and interconnected structure, symbolizing the paradigm shift.",
+      "emphasis": "Fundamental Change, Future",
+      "audioFile": "scene_11.mp3"
+    },
+    {
+      "voice": "The next generation of AI may not rely on a single powerful model, but on networks of specialized agents working together.",
+      "text": "Not One Giant Brain.\nBut Many Specialized Minds.\nWorking Together.",
+      "duration": 60,
+      "visual": "A single, massive brain dissolves. It is replaced by a constellation of smaller, distinct stars, each glowing with a different color, orbiting each other.",
+      "emphasis": "Collaboration, Diversity",
+      "audioFile": "scene_12.mp3"
+    },
+    {
+      "voice": "And right now, the industry is still in the very early stages of understanding what that future looks like.",
+      "text": "The Future is Here.\nBut It's Just Beginning.\nWatch Closely.",
+      "duration": 60,
+      "visual": "The constellation stabilizes. The camera pulls back to reveal the entire network is just the tip of an iceberg, with vast, unexplored depths below, hinting at the unknown future.",
+      "emphasis": "Horizon, Curiosity",
+      "audioFile": "scene_13.mp3"
     }
   ],
   "textRevealStyle": "word",
-  "backgroundStyle": "solid-minimal",
+  "backgroundStyle": "tech-grid",
   "backgroundAudio": "office",
   "characterMascot": "developer",
   "customCharacterUrl": ""

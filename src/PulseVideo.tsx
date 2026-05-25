@@ -101,15 +101,21 @@ const SceneComponent: React.FC<{
   const renderMascot = () => {
     if (characterMascot === "none") return null;
 
+    // Decide the pose based on scene emphasis, but also change/randomize it periodically within the scene
+    const poseInterval = 75; // change pose every 75 frames (~2.5s)
+    const segmentIndex = Math.floor(frame / poseInterval);
+    const frameInSegment = frame % poseInterval;
+
     let suffix = "neutral";
     if (scene.emphasis.includes("tense") || scene.emphasis.includes("impact")) {
-      suffix = "intense";
+      const poses = ["intense", "neutral", "intense", "thinking"];
+      suffix = poses[(index + segmentIndex) % poses.length];
     } else if (scene.emphasis.includes("curiosity") || scene.emphasis.includes("insight") || scene.emphasis.includes("reflective")) {
-      suffix = "thinking";
+      const poses = ["thinking", "neutral", "thinking", "intense"];
+      suffix = poses[(index + segmentIndex) % poses.length];
     } else {
-      // Dynamically alternate poses for neutral scenes to keep visual momentum
-      const poses = ["neutral", "thinking", "intense"];
-      suffix = poses[index % poses.length];
+      const poses = ["neutral", "thinking", "neutral", "intense"];
+      suffix = poses[(index + segmentIndex) % poses.length];
     }
 
     let imgSrc = "";
@@ -136,13 +142,21 @@ const SceneComponent: React.FC<{
     const floatY = Math.sin(frame / 12) * 12;
     const swayRotate = Math.sin(frame / 20) * 1.5; 
 
+    // Quick squash/stretch jump pop when the pose switches inside the scene
+    const poseTransition = spring({
+      fps,
+      frame: frameInSegment,
+      config: { damping: 12, stiffness: 180 }
+    });
+    const poseScale = interpolate(poseTransition, [0, 1], [0.92, 1.0]);
+
     return (
       <div style={{
         width: "35%",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        transform: `translateX(${translateX}px) translateY(${floatY}px) scaleX(${scaleX}) scaleY(${scaleY}) scale(${breatheScale}) rotate(${swayRotate}deg)`,
+        transform: `translateX(${translateX}px) translateY(${floatY}px) scaleX(${scaleX}) scaleY(${scaleY}) scale(${breatheScale * poseScale}) rotate(${swayRotate}deg)`,
         transformOrigin: "bottom center",
         opacity,
         zIndex: 10,
