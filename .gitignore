@@ -6,3 +6,6 @@ dist
 # Ignore the output video from Git but not videos you import into src/.
 out
 venv/
+public/scene_*.mp3
+public/temp_*.mp3
+temp_*
