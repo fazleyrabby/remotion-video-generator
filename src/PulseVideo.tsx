@@ -70,12 +70,14 @@ const DynamicBackground: React.FC<{ emphasis: string; styleMode?: string }> = ({
 
 const SceneComponent: React.FC<{ 
   scene: SceneProps; 
+  index: number;
   textRevealStyle?: string; 
   backgroundStyle?: string; 
   characterMascot?: string;
   customCharacterUrl?: string;
 }> = ({ 
   scene, 
+  index,
   textRevealStyle = "sentence", 
   backgroundStyle = "glowing-orb", 
   characterMascot = "none", 
@@ -104,6 +106,10 @@ const SceneComponent: React.FC<{
       suffix = "intense";
     } else if (scene.emphasis.includes("curiosity") || scene.emphasis.includes("insight") || scene.emphasis.includes("reflective")) {
       suffix = "thinking";
+    } else {
+      // Dynamically alternate poses for neutral scenes to keep visual momentum
+      const poses = ["neutral", "thinking", "intense"];
+      suffix = poses[index % poses.length];
     }
 
     let imgSrc = "";
@@ -270,6 +276,7 @@ export const PulseVideo: React.FC<z.infer<typeof pulseVideoSchema>> = ({
           <Sequence key={i} from={startFrame} durationInFrames={scene.duration}>
             <SceneComponent 
               scene={scene} 
+              index={i}
               textRevealStyle={textRevealStyle} 
               backgroundStyle={backgroundStyle} 
               characterMascot={characterMascot}
