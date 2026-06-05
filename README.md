@@ -8,6 +8,12 @@ An AI-powered **local video generator** built with [Remotion](https://www.remoti
 
 ---
 
+## 📸 Screenshots
+
+![Local Video Generator UI](docs/screenshots/ui-preview.png)
+
+---
+
 ## ✨ Features
 
 - **9 Background Styles** — glowing orb, tech grid, aurora, nebula, starfield, matrix rain, sunset vapor, gradient flow, solid minimal
