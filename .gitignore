@@ -23,8 +23,29 @@ public/deepspace.mp3
 # Temp files created during TTS synthesis
 temp_*
 
-# Sensitive / project-specific prompt files
+# Sensitive / project-specific prompt & social media draft files
 prompt.txt
+social-posts.md
 
 # Rendered lip-sync viseme data (generated per project)
 public/*.json
+
+# Project-specific backup / test data files
+*-backup.json
+test-*.json
+test-data.json
+
+# Python caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IDE and Editor configurations
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
