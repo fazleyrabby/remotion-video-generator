@@ -17,6 +17,9 @@ public/scene_*.mp3
 public/temp_*.mp3
 public/mars_*.mp3
 
+# Large ambient audio files (>50 MB — too large for GitHub without LFS)
+public/deepspace.mp3
+
 # Temp files created during TTS synthesis
 temp_*
 
