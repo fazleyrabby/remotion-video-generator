@@ -411,7 +411,6 @@ remotion-video-generator/
 │   ├── viseme-shapes.ts      # SVG mouth shape paths for each phoneme
 │   └── index.ts              # Remotion entry point
 ├── public/                   # Static assets (audio, images) — served by Remotion
-├── characters/               # Character SVG source files
 ├── generate_assets.mjs       # TTS audio generation script (Node)
 ├── generate_audio.py         # TTS backend: Edge TTS + Kokoro dispatcher
 ├── generate_audio_kokoro.py  # Kokoro TTS implementation
