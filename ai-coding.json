@@ -1,0 +1,388 @@
+{
+  "textRevealStyle": "typewriter",
+  "backgroundStyle": "techgrid",
+  "backgroundAudio": "ocean",
+  "ambientVolume": 25,
+  "characterMascot": "none",
+  "enableLipSync": false,
+  "voiceEngine": "edge",
+  "voiceName": "en-US-AndrewNeural",
+  "scenes": [
+    {
+      "text": "Everyone is debating AI coding.",
+      "voice": "Every week, another debate appears about AI-generated code, vibe coding, and whether developers should rely on AI tools.",
+      "audioFile": "scene_0.mp3",
+      "duration": 120,
+      "emphasis": "impact",
+      "imageFile": "scene_images/scene_0.png"
+    },
+    {
+      "text": "We're asking the wrong question.",
+      "voice": "But I think we're asking the wrong question.",
+      "audioFile": "scene_1.mp3",
+      "duration": 120,
+      "emphasis": "impact",
+      "imageFile": "scene_images/scene_0.png"
+    },
+    {
+      "text": "The real question is different.",
+      "voice": "The real question is: What should developers do when clients, management teams, and businesses expect faster delivery because AI exists?",
+      "audioFile": "scene_2.mp3",
+      "duration": 120,
+      "emphasis": "impact",
+      "imageFile": "scene_images/scene_0.png"
+    },
+    {
+      "text": "Software never existed in a vacuum.",
+      "voice": "Software development has always evolved alongside new tools and new productivity improvements.",
+      "audioFile": "scene_3.mp3",
+      "duration": 120,
+      "emphasis": "impact",
+      "imageFile": "scene_images/scene_0.png"
+    },
+    {
+      "text": "Version control changed expectations.",
+      "voice": "When version control became mainstream, developers shipped faster.",
+      "audioFile": "scene_4.mp3",
+      "duration": 120,
+      "emphasis": "impact",
+      "imageFile": "scene_images/scene_evolution_speed_1780547764912.png"
+    },
+    {
+      "text": "Frameworks changed expectations.",
+      "voice": "When frameworks matured, developers shipped faster.",
+      "audioFile": "scene_5.mp3",
+      "duration": 120,
+      "emphasis": "impact",
+      "imageFile": "scene_images/scene_evolution_speed_1780547764912.png"
+    },
+    {
+      "text": "Cloud platforms changed expectations.",
+      "voice": "When cloud infrastructure became easier to manage, developers shipped faster.",
+      "audioFile": "scene_6.mp3",
+      "duration": 120,
+      "emphasis": "impact",
+      "imageFile": "scene_images/scene_evolution_speed_1780547764912.png"
+    },
+    {
+      "text": "Now AI is doing the same thing.",
+      "voice": "Today, AI is creating another shift in productivity expectations.",
+      "audioFile": "scene_7.mp3",
+      "duration": 120,
+      "emphasis": "impact",
+      "imageFile": "scene_images/scene_evolution_speed_1780547764912.png"
+    },
+    {
+      "text": "Businesses see one thing.",
+      "voice": "Businesses look at these productivity gains and ask a simple question.",
+      "audioFile": "scene_8.mp3",
+      "duration": 120,
+      "emphasis": "impact",
+      "imageFile": "scene_images/scene_0.png"
+    },
+    {
+      "text": "\"If it can be done faster...\"",
+      "voice": "If this can be done faster, why are we still working at yesterday's speed?",
+      "audioFile": "scene_9.mp3",
+      "duration": 120,
+      "emphasis": "impact",
+      "imageFile": "scene_images/scene_0.png"
+    },
+    {
+      "text": "That's not an unreasonable question.",
+      "voice": "From a business perspective, that's not an unreasonable question to ask.",
+      "audioFile": "scene_10.mp3",
+      "duration": 120,
+      "emphasis": "impact",
+      "imageFile": "scene_images/scene_0.png"
+    },
+    {
+      "text": "Companies don't pay for keystrokes.",
+      "voice": "Companies don't pay developers for typing code.",
+      "audioFile": "scene_11.mp3",
+      "duration": 120,
+      "emphasis": "impact",
+      "imageFile": "scene_images/scene_outcomes_1780547777739.png"
+    },
+    {
+      "text": "They pay for outcomes.",
+      "voice": "They pay for working software, solved problems, and business results.",
+      "audioFile": "scene_12.mp3",
+      "duration": 120,
+      "emphasis": "impact",
+      "imageFile": "scene_images/scene_outcomes_1780547777739.png"
+    },
+    {
+      "text": "Speed was always valuable.",
+      "voice": "The market has always rewarded teams that can deliver quality software faster.",
+      "audioFile": "scene_13.mp3",
+      "duration": 120,
+      "emphasis": "impact",
+      "imageFile": "scene_images/scene_0.png"
+    },
+    {
+      "text": "AI changes the tools.",
+      "voice": "AI simply changes the tools available to achieve that outcome.",
+      "audioFile": "scene_14.mp3",
+      "duration": 120,
+      "emphasis": "impact",
+      "imageFile": "scene_images/scene_0.png"
+    },
+    {
+      "text": "Code was never the hardest part.",
+      "voice": "One common misconception is that software engineering is primarily about writing code.",
+      "audioFile": "scene_15.mp3",
+      "duration": 120,
+      "emphasis": "impact",
+      "imageFile": "scene_images/scene_0.png"
+    },
+    {
+      "text": "The difficult parts are elsewhere.",
+      "voice": "The hardest parts usually involve understanding requirements, making tradeoffs, managing complexity, and delivering reliable systems.",
+      "audioFile": "scene_16.mp3",
+      "duration": 120,
+      "emphasis": "impact",
+      "imageFile": "scene_images/scene_0.png"
+    },
+    {
+      "text": "Requirements.",
+      "voice": "Understanding what actually needs to be built.",
+      "audioFile": "scene_17.mp3",
+      "duration": 120,
+      "emphasis": "impact",
+      "imageFile": "scene_images/scene_13.png"
+    },
+    {
+      "text": "Architecture.",
+      "voice": "Designing systems that can evolve over time.",
+      "audioFile": "scene_18.mp3",
+      "duration": 120,
+      "emphasis": "impact",
+      "imageFile": "scene_images/scene_13.png"
+    },
+    {
+      "text": "Tradeoffs.",
+      "voice": "Balancing performance, maintainability, security, and delivery speed.",
+      "audioFile": "scene_19.mp3",
+      "duration": 120,
+      "emphasis": "impact",
+      "imageFile": "scene_images/scene_balancing_tradeoffs_1780547800069.png"
+    },
+    {
+      "text": "Reliability.",
+      "voice": "Ensuring software continues working under real-world conditions.",
+      "audioFile": "scene_20.mp3",
+      "duration": 120,
+      "emphasis": "impact",
+      "imageFile": "scene_images/scene_13.png"
+    },
+    {
+      "text": "Communication.",
+      "voice": "Aligning technical decisions with business needs and stakeholder expectations.",
+      "audioFile": "scene_21.mp3",
+      "duration": 120,
+      "emphasis": "impact",
+      "imageFile": "scene_images/scene_13.png"
+    },
+    {
+      "text": "AI can generate code.",
+      "voice": "AI can generate a controller, migration, API integration, or database query.",
+      "audioFile": "scene_22.mp3",
+      "duration": 120,
+      "emphasis": "impact",
+      "imageFile": "scene_images/scene_0.png"
+    },
+    {
+      "text": "AI cannot own the outcome.",
+      "voice": "But AI cannot take responsibility for production failures, security issues, or business consequences.",
+      "audioFile": "scene_23.mp3",
+      "duration": 120,
+      "emphasis": "impact",
+      "imageFile": "scene_images/scene_0.png"
+    },
+    {
+      "text": "That responsibility remains human.",
+      "voice": "That responsibility still belongs to the engineer.",
+      "audioFile": "scene_24.mp3",
+      "duration": 120,
+      "emphasis": "impact",
+      "imageFile": "scene_images/scene_ai_mastery_1780547812986.png"
+    },
+    {
+      "text": "The skillset is changing.",
+      "voice": "The industry is slowly shifting from asking: Can you write this code?",
+      "audioFile": "scene_25.mp3",
+      "duration": 120,
+      "emphasis": "impact",
+      "imageFile": "scene_images/scene_0.png"
+    },
+    {
+      "text": "To something bigger.",
+      "voice": "To asking: Can you deliver reliable software using every tool available?",
+      "audioFile": "scene_26.mp3",
+      "duration": 120,
+      "emphasis": "impact",
+      "imageFile": "scene_images/scene_0.png"
+    },
+    {
+      "text": "Judgment matters more.",
+      "voice": "Engineering judgment is becoming more valuable, not less.",
+      "audioFile": "scene_27.mp3",
+      "duration": 120,
+      "emphasis": "impact",
+      "imageFile": "scene_images/scene_ai_mastery_1780547812986.png"
+    },
+    {
+      "text": "Reviewing AI output matters.",
+      "voice": "The best developers are learning how to evaluate, challenge, and improve AI-generated solutions.",
+      "audioFile": "scene_28.mp3",
+      "duration": 120,
+      "emphasis": "impact",
+      "imageFile": "scene_images/scene_0.png"
+    },
+    {
+      "text": "This is the real distinction.",
+      "voice": "There is a significant difference between AI-assisted engineering and blind AI dependency.",
+      "audioFile": "scene_29.mp3",
+      "duration": 120,
+      "emphasis": "impact",
+      "imageFile": "scene_images/scene_0.png"
+    },
+    {
+      "text": "AI-Assisted Engineering",
+      "voice": "Requirements are understood. Architecture is planned. Code is reviewed. Security is validated. Tests are written. Performance is measured.",
+      "audioFile": "scene_30.mp3",
+      "duration": 120,
+      "emphasis": "impact",
+      "imageFile": "scene_images/scene_0.png"
+    },
+    {
+      "text": "Blind Vibe Coding",
+      "voice": "Copy. Paste. Deploy. Hope for the best.",
+      "audioFile": "scene_31.mp3",
+      "duration": 120,
+      "emphasis": "impact",
+      "imageFile": "scene_images/scene_10.png"
+    },
+    {
+      "text": "One scales productivity.",
+      "voice": "The first approach increases productivity while maintaining engineering standards.",
+      "audioFile": "scene_32.mp3",
+      "duration": 120,
+      "emphasis": "impact",
+      "imageFile": "scene_images/scene_0.png"
+    },
+    {
+      "text": "The other creates debt.",
+      "voice": "The second approach creates technical debt and future problems.",
+      "audioFile": "scene_33.mp3",
+      "duration": 120,
+      "emphasis": "impact",
+      "imageFile": "scene_images/scene_10.png"
+    },
+    {
+      "text": "Client expectations have changed.",
+      "voice": "Whether developers like it or not, clients are becoming increasingly aware of AI capabilities.",
+      "audioFile": "scene_34.mp3",
+      "duration": 120,
+      "emphasis": "impact",
+      "imageFile": "scene_images/scene_0.png"
+    },
+    {
+      "text": "Speed is now part of competition.",
+      "voice": "Efficiency is becoming part of competitive advantage.",
+      "audioFile": "scene_35.mp3",
+      "duration": 120,
+      "emphasis": "impact",
+      "imageFile": "scene_images/scene_0.png"
+    },
+    {
+      "text": "The standards are moving.",
+      "voice": "If one team can deliver a high-quality solution in a week, clients naturally question why another team needs a month.",
+      "audioFile": "scene_36.mp3",
+      "duration": 120,
+      "emphasis": "impact",
+      "imageFile": "scene_images/scene_0.png"
+    },
+    {
+      "text": "History repeats itself.",
+      "voice": "Every major technological shift creates resistance before it becomes normal.",
+      "audioFile": "scene_37.mp3",
+      "duration": 120,
+      "emphasis": "impact",
+      "imageFile": "scene_images/scene_0.png"
+    },
+    {
+      "text": "Adaptation wins.",
+      "voice": "History consistently rewards professionals who learn how to leverage new tools effectively.",
+      "audioFile": "scene_38.mp3",
+      "duration": 120,
+      "emphasis": "impact",
+      "imageFile": "scene_images/scene_0.png"
+    },
+    {
+      "text": "AI isn't replacing engineering.",
+      "voice": "AI is not eliminating the need for engineers.",
+      "audioFile": "scene_39.mp3",
+      "duration": 120,
+      "emphasis": "impact",
+      "imageFile": "scene_images/scene_0.png"
+    },
+    {
+      "text": "It's raising the standard.",
+      "voice": "It is raising the standard for what productive engineering looks like.",
+      "audioFile": "scene_40.mp3",
+      "duration": 120,
+      "emphasis": "impact",
+      "imageFile": "scene_images/scene_0.png"
+    },
+    {
+      "text": "The future belongs to engineers who combine...",
+      "voice": "Technical expertise. Business understanding. Communication skills. Engineering judgment. And AI-assisted productivity.",
+      "audioFile": "scene_41.mp3",
+      "duration": 120,
+      "emphasis": "impact",
+      "imageFile": "scene_images/scene_ai_mastery_1780547812986.png"
+    },
+    {
+      "text": "The battle is already over.",
+      "voice": "The conversation should no longer be about whether developers should use AI.",
+      "audioFile": "scene_42.mp3",
+      "duration": 120,
+      "emphasis": "impact",
+      "imageFile": "scene_images/scene_0.png"
+    },
+    {
+      "text": "The real challenge is responsibility.",
+      "voice": "The real challenge is learning how to use AI responsibly while maintaining quality, reliability, and accountability.",
+      "audioFile": "scene_43.mp3",
+      "duration": 120,
+      "emphasis": "impact",
+      "imageFile": "scene_images/scene_ai_mastery_1780547812986.png"
+    },
+    {
+      "text": "The future isn't...",
+      "voice": "The future isn't manual coding versus AI coding.",
+      "audioFile": "scene_44.mp3",
+      "duration": 120,
+      "emphasis": "impact",
+      "imageFile": "scene_images/scene_ai_mastery_1780547812986.png"
+    },
+    {
+      "text": "It's about delivery.",
+      "voice": "It's about who can consistently deliver the best software, in the least amount of time, with the highest level of confidence.",
+      "audioFile": "scene_45.mp3",
+      "duration": 120,
+      "emphasis": "impact",
+      "imageFile": "scene_images/scene_ai_mastery_1780547812986.png"
+    },
+    {
+      "text": "AI Coding Isn't the Problem.",
+      "voice": "Expectations have changed.",
+      "audioFile": "scene_46.mp3",
+      "duration": 120,
+      "emphasis": "impact",
+      "imageFile": "scene_images/scene_0.png"
+    }
+  ]
+}

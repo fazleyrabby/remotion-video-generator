@@ -1,0 +1,52 @@
+# Python dependencies for local-video-generator
+#
+# Install into the project's virtual environment:
+#   python3 -m venv venv
+#   source venv/bin/activate
+#   pip install -r requirements.txt
+
+# TTS: Microsoft Edge Text-to-Speech (cloud, no API key required)
+edge-tts>=6.1.9
+
+# Image processing (background removal utility)
+Pillow>=10.0.0
+
+# ─────────────────────────────────────────────────────────────────────────────
+# OPTIONAL: Kokoro local TTS (runs in a separate conda environment)
+# ─────────────────────────────────────────────────────────────────────────────
+# Kokoro requires a separate conda env because its dependency tree
+# (onnxruntime, espeak-ng) conflicts with the main venv.
+#
+# Setup instructions:
+#   conda create -n kokoro python=3.10
+#   conda activate kokoro
+#   pip install kokoro soundfile numpy
+#   brew install espeak-ng      # macOS
+#   # or: apt-get install espeak-ng  (Linux)
+#
+# The KOKORO_PYTHON env var tells generate_audio.py where to find this env:
+#   export KOKORO_PYTHON=~/miniconda3/envs/kokoro/bin/python
+#
+# If KOKORO_PYTHON is not set, it defaults to:
+#   ~/miniconda3/envs/kokoro/bin/python
+#
+# Kokoro voices: af_heart, am_adam, am_puck, am_fenrir, am_michael,
+#                bf_emma, bm_george, etc.
+
+# ─────────────────────────────────────────────────────────────────────────────
+# OPTIONAL: Rhubarb Lip Sync (binary, not a pip package)
+# ─────────────────────────────────────────────────────────────────────────────
+# Required only for --enableLipSync mode.
+# Download from: https://github.com/DanielSWolf/rhubarb-lip-sync/releases
+#
+# macOS (Homebrew):
+#   brew install rhubarb-lip-sync
+#
+# Or place the binary at:
+#   ~/.local/Rhubarb-Lip-Sync-1.14.0-macOS/rhubarb
+#
+# ─────────────────────────────────────────────────────────────────────────────
+# REQUIRED system dependency: ffmpeg
+# ─────────────────────────────────────────────────────────────────────────────
+# brew install ffmpeg       # macOS
+# apt-get install ffmpeg    # Linux / Ubuntu

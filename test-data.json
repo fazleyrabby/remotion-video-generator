@@ -1,0 +1,21 @@
+{
+  "textRevealStyle": "sentence",
+  "backgroundStyle": "game-rpg-anime",
+  "backgroundAudio": "none",
+  "ambientVolume": 12,
+  "characterMascot": "anime-vtuber",
+  "enableLipSync": false,
+  "scenes": [
+    {
+      "text": "Software is eating the world.",
+      "voice": "Software is eating the world. And right now, AI is eating software.",
+      "duration": 300,
+      "emphasis": "impact",
+      "visual": "Wide cinematic shot of a futuristic city at dusk",
+      "audioFile": "scene_0.mp3",
+      "characterId": "anime-vtuber",
+      "bodyPose": "neutral",
+      "expression": "neutral"
+    }
+  ]
+}

@@ -1,129 +1,20 @@
 {
   "scenes": [
     {
-      "voice": "AI systems designed for cybersecurity are rapidly becoming more capable and more sensitive.",
-      "text": "Security AI is evolving fast.",
-      "duration": 60,
-      "visual": "Dark, sleek digital nodes connecting rapidly. Microscopic view of code streams flowing like liquid metal. Cool blue and purple lighting.",
-      "emphasis": "Building Tension",
+      "text": "this is a test scene",
+      "voice": "this is a test scene",
+      "duration": 30,
+      "emphasis": "tense",
+      "visual": "Cinematic",
+      "imageFile": "",
       "audioFile": "scene_0.mp3"
-    },
-    {
-      "voice": "Anthropic has introduced access restrictions for Mythos, its new cybersecurity-focused AI model.",
-      "text": "Mythos is restricted.",
-      "duration": 60,
-      "visual": "A futuristic, glowing AI face or neural network structure. A hard 'glitch' or 'red warning' overlay slams across the screen, cutting off the flow.",
-      "emphasis": "Shock",
-      "audioFile": "scene_1.mp3"
-    },
-    {
-      "voice": "The decision appears to be driven by concerns about potential misuse of the model's capabilities.",
-      "text": "Why the restriction?",
-      "duration": 60,
-      "visual": "Split screen. Left: A shield protecting data. Right: A shadowy, jagged shadow reaching through the shield. High contrast.",
-      "emphasis": "Inquisitive",
-      "audioFile": "scene_2.mp3"
-    },
-    {
-      "voice": "As AI systems become more advanced in cybersecurity tasks, the line between defense and offensive misuse becomes increasingly complicated.",
-      "text": "Defense vs. Offensive.",
-      "duration": 60,
-      "visual": "A thin, razor-sharp line of light. On one side, a golden shield glows. On the other, a dark, jagged shadow creeps forward, erasing the boundary.",
-      "emphasis": "Uncertainty",
-      "audioFile": "scene_3.mp3"
-    },
-    {
-      "voice": "Instead of broad public access, Anthropic is limiting who can interact with the model and under what conditions.",
-      "text": "Not public. Controlled.",
-      "duration": 60,
-      "visual": "A wide, open door slowly locks and turns into a heavy, metallic blast door. Dust and particles float in the air as the door seals.",
-      "emphasis": "Restriction",
-      "audioFile": "scene_4.mp3"
-    },
-    {
-      "voice": "The system reportedly uses role-based access control mechanisms to determine authorized access.",
-      "text": "Role-based Access Control.",
-      "duration": 60,
-      "visual": "A complex, rotating geometric lock. Key slots are highlighted, and different colored 'keys' (representing roles) are being tested against them.",
-      "emphasis": "Technical",
-      "audioFile": "scene_5.mp3"
-    },
-    {
-      "voice": "Additional encryption and security measures are being used to help prevent unauthorized usage and reduce operational risk.",
-      "text": "Encryption layers.",
-      "duration": 60,
-      "visual": "A transparent glass wall. Inside, the AI model glows. Outside, the wall is covered in intricate, shimmering geometric patterns representing encryption codes.",
-      "emphasis": "Protection",
-      "audioFile": "scene_6.mp3"
-    },
-    {
-      "voice": "The move reflects a broader industry trend toward restricting highly capable AI systems with potentially dangerous applications.",
-      "text": "A new industry standard.",
-      "duration": 60,
-      "visual": "A wide shot of a bustling, futuristic cityscape. Several servers and servers are shown, and they are all being locked down with digital chains and locks.",
-      "emphasis": "Broader Context",
-      "audioFile": "scene_7.mp3"
-    },
-    {
-      "voice": "As AI capabilities continue accelerating, organizations are increasingly being forced to balance openness with security concerns.",
-      "text": "Accelerating vs. Controlled.",
-      "duration": 60,
-      "visual": "A fast-moving car (representing speed) trying to enter a gated community. The car hits the gate, and the gate slams shut just as it hits the wall.",
-      "emphasis": "Conflict",
-      "audioFile": "scene_8.mp3"
-    },
-    {
-      "voice": "Unlike general-purpose chatbots, cybersecurity-focused models may be capable of vulnerability analysis, exploit assistance, and advanced system reasoning.",
-      "text": "They are weapons.",
-      "duration": 60,
-      "visual": "A generic chat bubble dissolves into sharp, pointed shards. The shards float and spin, revealing a dangerous, glowing core inside.",
-      "emphasis": "Warning",
-      "audioFile": "scene_9.mp3"
-    },
-    {
-      "voice": "This creates difficult ethical and operational questions around access, oversight, and responsible deployment.",
-      "text": "Who decides?",
-      "duration": 60,
-      "visual": "A courtroom setting, but the jury is made of servers and servers. The jury looks confused and uncertain, hands raised in the air.",
-      "emphasis": "Dilemma",
-      "audioFile": "scene_10.mp3"
-    },
-    {
-      "voice": "For developers and organizations relying on these tools, tighter access controls could impact usability, experimentation, and integration workflows.",
-      "text": "Innovation hits a wall.",
-      "duration": 60,
-      "visual": "A developer's hands reaching out to touch a glowing, futuristic interface. The interface hardens and becomes an impenetrable wall, pushing the hands away.",
-      "emphasis": "Consequence",
-      "audioFile": "scene_11.mp3"
-    },
-    {
-      "voice": "The era of unrestricted access to every increasingly powerful AI capability may slowly be coming to an end.",
-      "text": "End of unrestricted access.",
-      "duration": 60,
-      "visual": "A sunset over a digital landscape. The sky turns from bright blue to deep purple and black. The sun sets behind a digital barrier.",
-      "emphasis": "Shift",
-      "audioFile": "scene_12.mp3"
-    },
-    {
-      "voice": "As AI systems grow more powerful, the tension between innovation, accessibility, and security is becoming harder to ignore.",
-      "text": "Security vs. Openness.",
-      "duration": 60,
-      "visual": "A pendulum swinging violently. One side is labeled 'Innovation', the other 'Security'. The pendulum swings back and forth, creating a blur of motion.",
-      "emphasis": "Tension",
-      "audioFile": "scene_13.mp3"
-    },
-    {
-      "voice": "Right now, the industry is still trying to determine where the boundaries should exist for highly capable AI systems.",
-      "text": "Still searching for boundaries.",
-      "duration": 60,
-      "visual": "A maze. The walls are made of servers and servers. A single, thin beam of light shines through the maze, illuminating the path forward, but the path is uncertain.",
-      "emphasis": "Uncertainty",
-      "audioFile": "scene_14.mp3"
     }
   ],
-  "textRevealStyle": "word",
-  "backgroundStyle": "solid-minimal",
-  "backgroundAudio": "office",
-  "characterMascot": "cyberpunk",
-  "customCharacterUrl": ""
+  "textRevealStyle": "sentence",
+  "backgroundStyle": "glowing-orb",
+  "backgroundAudio": "none",
+  "ambientVolume": 12,
+  "characterMascot": "none",
+  "customCharacterUrl": "",
+  "enableLipSync": false
 }

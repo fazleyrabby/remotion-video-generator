@@ -9,19 +9,27 @@ export const sceneSchema = z.object({
   duration: z.number(),
   visual: z.string(),
   emphasis: z.string(),
-  audioFile: z.string()
+  audioFile: z.string(),
+  imageFile: z.string().optional(),
+  // Lip-sync character fields
+  characterId: z.string().optional().default("narrator"),
+  visemeFile: z.string().optional(),
+  bodyPose: z.enum(["neutral", "thinking", "excited", "concerned", "pointing"]).optional().default("neutral"),
+  expression: z.enum(["neutral", "happy", "serious", "surprised", "thoughtful"]).optional().default("neutral"),
 });
 
 export const pulseVideoSchema = z.object({
   scenes: z.array(sceneSchema),
-  textRevealStyle: z.enum(["sentence", "word"]).optional().default("sentence"),
-  backgroundStyle: z.enum(["glowing-orb", "tech-grid", "solid-minimal"]).optional().default("glowing-orb"),
-  backgroundAudio: z.enum(["none", "rain", "nature", "office"]).optional().default("none"),
-  characterMascot: z.enum(["none", "developer", "cyberpunk", "custom"]).optional().default("none"),
+  textRevealStyle: z.enum(["sentence", "word", "typewriter", "char-pop", "slide-left", "karaoke", "glitch", "blur-in"]).optional().default("sentence"),
+  backgroundStyle: z.enum(["glowing-orb", "tech-grid", "solid-minimal", "starfield", "aurora", "nebula", "gradient-flow", "matrix-rain", "sunset-vapor", "game-rpg", "game-rpg-anime", "game-rpg-forest"]).optional().default("glowing-orb"),
+  backgroundAudio: z.enum(["none", "rain", "nature", "office", "lofi", "ocean", "fire", "whitenoise", "deepspace", "heartbeat", "cinematic"]).optional().default("none"),
+  ambientVolume: z.number().min(0).max(100).optional().default(12),
+  characterMascot: z.enum(["none", "developer", "cyberpunk", "custom", "pixel-user", "anime-vtuber"]).optional().default("none"),
   customCharacterUrl: z.string().optional(),
+  enableLipSync: z.boolean().optional().default(false),
 });
 
-const calculateMetadata: CalculateMetadataFunction<typeof pulseVideoSchema> = async ({ props }) => {
+const calculateMetadata: CalculateMetadataFunction<z.infer<typeof pulseVideoSchema>> = async ({ props }) => {
   let totalDurationFrames = 0;
   const fps = 30;
 
@@ -75,9 +83,18 @@ export const RemotionRoot: React.FC = () => {
               duration: 150,
               visual: "dark",
               emphasis: "neutral",
-              audioFile: "speech.mp3"
+              audioFile: "speech.mp3",
+              characterId: "narrator",
+              bodyPose: "neutral" as const,
+              expression: "neutral" as const,
             }
-          ]
+          ],
+          textRevealStyle: "sentence",
+          backgroundStyle: "glowing-orb",
+          backgroundAudio: "none",
+          ambientVolume: 12,
+          characterMascot: "none",
+          enableLipSync: false,
         }}
         calculateMetadata={calculateMetadata}
       />

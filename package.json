@@ -1,8 +1,11 @@
 {
-  "name": "local-video-generator",
+  "name": "remotion-video-generator",
   "version": "1.0.0",
-  "description": "My Remotion video",
-  "repository": {},
+  "description": "AI-powered local video generator with Remotion, TTS (Edge/Kokoro), lip-sync characters, pixel mascots, and rich background styles",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fazleyrabby/remotion-video-generator.git"
+  },
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {

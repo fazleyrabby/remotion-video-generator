@@ -1,0 +1,54 @@
+{
+  "textRevealStyle": "sentence",
+  "backgroundStyle": "game-rpg-anime",
+  "backgroundAudio": "none",
+  "ambientVolume": 12,
+  "characterMascot": "anime-vtuber",
+  "enableLipSync": false,
+  "scenes": [
+    {
+      "text": "Mars. The Red Planet.",
+      "voice": "Mars. The fourth planet from the Sun. It has captivated human imagination for centuries — and we are finally close enough to touch it.",
+      "duration": 150,
+      "emphasis": "impact",
+      "visual": "Wide cinematic view of Mars from orbit",
+      "audioFile": "mars_0.mp3",
+      "characterId": "anime-vtuber",
+      "bodyPose": "neutral",
+      "expression": "neutral"
+    },
+    {
+      "text": "Its surface is covered\nin iron oxide.",
+      "voice": "Its entire surface is coated in iron oxide — rust. That is what gives Mars its signature red glow, visible even from Earth with the naked eye.",
+      "duration": 150,
+      "emphasis": "curiosity",
+      "visual": "Close-up of rusty Martian rocks and soil",
+      "audioFile": "mars_1.mp3",
+      "characterId": "anime-vtuber",
+      "bodyPose": "pointing",
+      "expression": "neutral"
+    },
+    {
+      "text": "Mars once had oceans.\nAnd maybe life.",
+      "voice": "Scientists believe Mars once had vast liquid oceans. Ancient river valleys and lake beds suggest it may have harbored the conditions for microbial life billions of years ago.",
+      "duration": 150,
+      "emphasis": "reflective",
+      "visual": "Ancient Martian landscape with dried riverbeds",
+      "audioFile": "mars_2.mp3",
+      "characterId": "anime-vtuber",
+      "bodyPose": "thinking",
+      "expression": "thoughtful"
+    },
+    {
+      "text": "Humans are going to Mars.\nThis decade.",
+      "voice": "And now humans are planning to set foot on Mars within this decade. The dream that once lived only in science fiction is becoming an engineering reality.",
+      "duration": 150,
+      "emphasis": "release",
+      "visual": "Astronaut stepping onto the Martian surface at sunrise",
+      "audioFile": "mars_3.mp3",
+      "characterId": "anime-vtuber",
+      "bodyPose": "excited",
+      "expression": "happy"
+    }
+  ]
+}
