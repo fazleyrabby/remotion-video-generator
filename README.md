@@ -37,6 +37,7 @@ An AI-powered **local video generator** built with [Remotion](https://www.remoti
 | Node.js ≥ 18 | ✅ | For Remotion and scripts |
 | Python ≥ 3.10 | ✅ | For TTS and image processing |
 | ffmpeg | ✅ | For audio conversion (`brew install ffmpeg`) |
+| Local LLM server | ⚠️ For UI only | Required only when using the SignalStack UI to draft scenes from a prompt. Not needed for CLI usage or manually written scenes. |
 | Kokoro TTS | Optional | For offline TTS — requires separate conda env |
 | Rhubarb Lip Sync | Optional | Only for `enableLipSync: true` |
 
@@ -50,7 +51,32 @@ An AI-powered **local video generator** built with [Remotion](https://www.remoti
 npm install
 ```
 
-### 2. Set Up Python Virtual Environment
+### 2. (UI Only) Set Up a Local LLM Server
+
+> [!IMPORTANT]
+> A local LLM is **only required when using the SignalStack frontend UI** to auto-draft scenes from a prompt. If you write your scenes manually (JSON or Scene Editor), **no LLM is needed**.
+
+The UI calls a local OpenAI-compatible API at `http://127.0.0.1:8081`. Any server that speaks the OpenAI Chat Completions format works. The default model is **Qwen 3.5 4B**.
+
+**Option A — MLX (Apple Silicon, recommended)**
+```bash
+pip install mlx-lm
+mlx_lm.server --model mlx-community/Qwen2.5-3B-Instruct-4bit --port 8081
+```
+
+**Option B — Ollama**
+```bash
+brew install ollama
+ollama pull qwen2.5:3b
+OLLAMA_HOST=127.0.0.1:8081 ollama serve
+```
+
+**Option C — LM Studio / any OpenAI-compatible server**
+Point the server to port `8081` and load any capable model (3B+ recommended).
+
+If the LLM server is not running when you click "Generate Video", the request will fail at the drafting step. You can still use the **Cinematic Scene Script Editor** tab to write and render scenes manually — no LLM required.
+
+### 3. Set Up Python Virtual Environment
 
 ```bash
 python3 -m venv venv
@@ -60,14 +86,14 @@ source venv/bin/activate       # macOS/Linux
 pip install -r requirements.txt
 ```
 
-### 3. Install ffmpeg (required)
+### 4. Install ffmpeg (required)
 
 ```bash
 brew install ffmpeg            # macOS
 # sudo apt-get install ffmpeg  # Ubuntu/Linux
 ```
 
-### 4. (Optional) Kokoro Local TTS
+### 5. (Optional) Kokoro Local TTS
 
 Kokoro runs offline, producing higher-quality voices than Edge TTS, but requires a separate conda environment:
 
@@ -84,7 +110,7 @@ Tell the generator where to find Kokoro Python:
 export KOKORO_PYTHON=~/miniconda3/envs/kokoro/bin/python
 ```
 
-### 5. (Optional) Rhubarb Lip Sync
+### 6. (Optional) Rhubarb Lip Sync
 
 Required only if using `"enableLipSync": true`.
 
